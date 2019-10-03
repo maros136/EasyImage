@@ -39,6 +39,10 @@ android {
         sourceCompatibility rootProject.ext.javaSource
         targetCompatibility rootProject.ext.javaTarget
     }
+
+    kotlinOptions {
+        jvmTarget = rootProject.ext.javaTarget
+    }
 }
 
 dependencies {
